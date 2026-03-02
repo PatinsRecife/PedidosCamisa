@@ -304,15 +304,48 @@
         (Isso é comum em alguns navegadores no celular.)
       </div>
 
-      <div class="iframe-wrap">
-        <iframe
-          id="gform"
-          src="https://docs.google.com/forms/d/e/1FAIpQLSdWvzbVdonDlvm4OOerTAcW9s9bgRjD4Ip_yofIxp_RwwmN0g/viewform?usp=dialog"
-          loading="lazy"
-          allowfullscreen
-          title="Formulário de pedidos - Camisas"
-        >Carregando…</iframe>
-      </div>
+      <div style="text-align:center; padding:40px 20px;">
+
+  <div style="
+    background: rgba(255,255,255,0.08);
+    border-radius: 18px;
+    padding: 40px 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+    backdrop-filter: blur(6px);
+  ">
+
+    <h3 style="margin-top:0; font-size:1.6rem; letter-spacing:1px;">
+      Pedido - Camisa Roller Nordeste
+    </h3>
+
+    <p style="opacity:0.9; margin-bottom:30px;">
+      Clique abaixo para preencher seu pedido e garantir sua camisa oficial.
+    </p>
+
+    <a 
+      href="https://docs.google.com/forms/d/e/1FAIpQLSdWvzbVdonDlvm4OOerTAcW9s9bgRjD4Ip_yofIxp_RwwmN0g/viewform"
+      target="_blank"
+      style="
+        display:inline-block;
+        padding:18px 36px;
+        font-size:18px;
+        font-weight:900;
+        border-radius:14px;
+        text-decoration:none;
+        color:#fff;
+        background: linear-gradient(90deg, #0d7bdc, #b86b3e);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.35);
+        transition: all .2s ease;
+      "
+      onmouseover="this.style.transform='scale(1.05)'"
+      onmouseout="this.style.transform='scale(1)'"
+    >
+      📝 Fazer Pedido Agora
+    </a>
+
+  </div>
+
+</div>
     </div>
   </section>
 
@@ -324,7 +357,7 @@
 
   <script>
     // ===== Botão abrir em nova aba =====
-    const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdWvzbVdonDlvm4OOerTAcW9s9bgRjD4Ip_yofIxp_RwwmN0g/viewform?usp=dialog";
+    const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdWvzbVdonDlvm4OOerTAcW9s9bgRjD4Ip_yofIxp_RwwmN0g/viewform";
     document.getElementById("btnAbrir").addEventListener("click", () => {
       window.open(formUrl, "_blank", "noopener,noreferrer");
     });
